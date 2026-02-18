@@ -6,12 +6,12 @@ import { auth } from "~/server/better-auth";
 import { getSession } from "~/server/better-auth/server";
 
 const mockUrls = [
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIM7aNIqKVHr02nUPSBtiZwjlpCyVJKxu8zNfkM",
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMyLtzUXVr5L9Ie4ENFz2nGMYJBQfk1cSXuDPo",
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMinuqBToIC93LySf7XmJwKRaE0gVNYporZDQW",
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMqk0BjP6gSCkWr1OpsGZHz3X07u8VybL5FxvU",
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMf0AAtxRAQSW2FEl3UxfedLJoGpD7zh5kPmv9",
-    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMFJBhuGQC42fn7mwr8VQ5tclbpP1ZDHj6kXe0",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIM11bCByWWiAQRFzJ43qcV9phkPemouTYLxBsZ",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIM4PaJDg3aZ8hYQr5eCsT0EpzG9oVSHgvA1xOI",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMkHYDDCcHDhbBIaNXPxg612sYiAlQ7MZpz3Ty",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMgNYMQv1y6usLHo7BKw5iZaIjtbe90FWCknvP",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMcH6Sz2u2ag9xLZBprwotYORkuJyhSvmf1zTD",
+    "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIMaI01jOnhRQ45u9A1fwpXNL70qjvgIoCmVPJH",
 ]
 const mockImgs = mockUrls.map((url, i) => ({
     i: i + 1,
@@ -20,7 +20,6 @@ const mockImgs = mockUrls.map((url, i) => ({
 
 export default async function Home() {
     const session = await getSession();
-
 
 
     return (
@@ -34,7 +33,6 @@ export default async function Home() {
                     ))
                 }
             </div>
-            Hello bookmarks in progress
         </main>
     );
 }

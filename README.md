@@ -2,8 +2,9 @@
 
 ## TODO
 
-- [] Deploy (Vercel)
-- [] Scaffold basic ui with mock data
+- [x] Deploy (Vercel)
+- [x] Scaffold basic ui with mock data
+- [x] Tidy up build process
 - [] Set up a Database (Supabase)
 - [] Attach DB to UI
 - [] Add Authentication (w/ BetterAuth)
