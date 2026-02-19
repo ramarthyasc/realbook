@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 
 import { auth } from "~/server/better-auth";
 import { getSession } from "~/server/better-auth/server";
+import { db } from "~/server/db";
 
 const mockUrls = [
     "https://koatqvtbno.ufs.sh/f/PrJRq7EsZuIM11bCByWWiAQRFzJ43qcV9phkPemouTYLxBsZ",
@@ -21,10 +22,18 @@ const mockImgs = mockUrls.map((url, i) => ({
 export default async function Home() {
     const session = await getSession();
 
+    const posts = await db.post.findMany();
+    console.log(posts);
+
 
     return (
         <main className="">
             <div className="flex flex-wrap justify-center gap-4">
+                {
+                    posts.map((row) => (
+                        <div key={row.id}> {row.name}</div>
+                    ))
+                }
                 {
                     [...mockImgs, ...mockImgs, ...mockImgs].map((img, i) => (
                         <div key={i} className="w-48 h-48">
