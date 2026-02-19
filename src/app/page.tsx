@@ -19,8 +19,10 @@ const mockImgs = mockUrls.map((url, i) => ({
     url
 }))
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
-    const session = await getSession();
+    // const session = await getSession();
 
     const posts = await db.post.findMany();
     console.log(posts);
