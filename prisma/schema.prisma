@@ -16,9 +16,10 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model Post {
+model Image {
   id        String   @id @default(cuid())
   name      String
+  url       String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
@@ -27,6 +28,8 @@ model Post {
 
   @@index([name])
 }
+
+
 
 model User {
   id            String    @id
@@ -38,7 +41,7 @@ model User {
   updatedAt     DateTime  @default(now()) @updatedAt
   sessions      Session[]
   accounts      Account[]
-  posts         Post[]
+  images         Image[]
 
   @@unique([email])
   @@map("user")

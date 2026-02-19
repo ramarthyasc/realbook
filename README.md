@@ -5,8 +5,8 @@
 - [x] Deploy (Vercel)
 - [x] Scaffold basic ui with mock data
 - [x] Tidy up build process
-- [] Set up a Database (Supabase)
-- [] Attach DB to UI
+- [x] Set up a Database (Supabase)
+- [x] Attach DB to UI
 - [] Add Authentication (w/ BetterAuth)
 - [] Add bookmarks & image uploads for visual distinction
 - [] Error management (w/ Sentry)
