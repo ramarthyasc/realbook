@@ -15,8 +15,12 @@ export const auth = betterAuth({
     github: {
       clientId: env.BETTER_AUTH_GITHUB_CLIENT_ID,
       clientSecret: env.BETTER_AUTH_GITHUB_CLIENT_SECRET,
-      redirectURI: "http://localhost:3000/api/auth/callback/github",
+      // redirectURI: "http://localhost:3000/api/auth/callback/github",
     },
+    google: {
+        clientId: env.BETTER_AUTH_GOOGLE_CLIENT_ID,
+        clientSecret: env.BETTER_AUTH_GOOGLE_CLIENT_SECRET,
+    }
   },
 });
 

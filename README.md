@@ -7,7 +7,7 @@
 - [x] Tidy up build process
 - [x] Set up a Database (Supabase)
 - [x] Attach DB to UI
-- [] Add Authentication (w/ BetterAuth)
+- [x] Add Authentication (w/ BetterAuth)
 - [] Add bookmarks & image uploads for visual distinction
 - [] Error management (w/ Sentry)
 - [] Routing / image page (parallel route)
